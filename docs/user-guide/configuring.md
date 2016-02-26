@@ -15,11 +15,11 @@ All of these options give you fine-grained control over how ESLint treats your c
 
 ## Specifying Parser Options
 
-ESLint allows you to specify the JavaScript language options you want to support. By default, ESLint supports only ECMAScript 5 syntax. You can override that setting to enable support for ECMAScript 6 as well as [JSX](http://facebook.github.io/jsx/) by using parser options.
+ESLint allows you to specify the JavaScript language options you want to support. By default, ESLint supports only ECMAScript 5 syntax. You can override that setting to enable support for ECMAScript 6 and 7 as well as [JSX](http://facebook.github.io/jsx/) by using parser options.
 
 Parser options are set in your `.eslintrc.*` file by using the `parserOptions` property. The available options are:
 
-* `ecmaVersion` - set to 3, 5 (default), or 6 to specify the version of ECMAScript you want to use.
+* `ecmaVersion` - set to 3, 5 (default), 6, or 7 to specify the version of ECMAScript you want to use.
 * `sourceType` - set to `"script"` (default) or `"module"` if your code is in ECMAScript modules.
 * `ecmaFeatures` - an object indicating which additional language features you'd like to use:
     * `globalReturn` - allow `return` statements in the global scope
@@ -83,6 +83,7 @@ An environment defines global variables that are predefined. The available envir
 * `commonjs` - CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
 * `shared-node-browser` - Globals common to both Node and Browser.
 * `es6` - enable all ECMAScript 6 features except for modules.
+* `es7` - enable all ECMAScript 7 and earlier features except for ES6 modules.
 * `worker` - web workers global variables.
 * `amd` - defines `require()` and `define()` as global variables as per the [amd](https://github.com/amdjs/amdjs-api/wiki/AMD) spec.
 * `mocha` - adds all of the Mocha testing global variables.

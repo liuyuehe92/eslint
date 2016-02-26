@@ -102,6 +102,12 @@ module.exports = {
             ecmaVersion: 6
         }
     },
+    es7: {
+        globals: globals.es6,
+        parserOptions: {
+            ecmaVersion: 7
+        }
+    },
     greasemonkey: {
         globals: globals.greasemonkey
     }
